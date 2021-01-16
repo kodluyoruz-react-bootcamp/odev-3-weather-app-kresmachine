@@ -1,4 +1,4 @@
-export default [
+const cities = [
     {
         "name": "adana",
         "plate": "01",
@@ -1610,3 +1610,4 @@ export default [
         ]
     }
 ]
+export default cities

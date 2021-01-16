@@ -1,4 +1,4 @@
-import { convertToCelsius, getDayName } from "../helpers/index";
+import {  getDayName } from "../helpers/index";
 
 function WeatherCard({ weather, isCurrentDay, day }) {
     const date = new Date();
@@ -11,14 +11,14 @@ function WeatherCard({ weather, isCurrentDay, day }) {
             <div className="city-name">
                 <span>{getDayName(date)}</span>
             </div>
-            <div class="city-temp">
+            <div className="city-temp">
                 {weather.temp.day}<sup>°C</sup>
             </div>
-            <div class="city-temp temp-max">
+            <div className="city-temp temp-max">
                 max: {weather.temp.max}<sup>°C</sup>
             </div>
             <figure>
-                <img class="city-icon" src={image} />
+                <img alt="icon" className="city-icon" src={image} />
                 <figcaption>{weather.weather[0].description}</figcaption>
             </figure>
         </li>
